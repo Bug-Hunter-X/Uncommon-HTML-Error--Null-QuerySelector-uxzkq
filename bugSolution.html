@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    const myDiv = document.querySelector('#myDiv');
+    if (myDiv) {
+      myDiv.innerHTML = "<p>This is a paragraph.</p>";
+    } else {
+      console.log("Element with id 'myDiv' not found.");
+      //Or handle the error in a more user-friendly way.
+    }
+  </script>
+</body>
+</html>
